@@ -1,2 +1,10 @@
 dotenv
 langchain
+regex
+langchain_google_genai
+textwrap
+dotenv
+pandas
+json
+google
+google-generativeai

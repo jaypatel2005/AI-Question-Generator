@@ -49,6 +49,7 @@ generation = gen_prompt | llm | output_parser
 
 
 def generate(subject, typ, number):
+    print("Generating...")
     quiz = generation.invoke({
     "subject" : subject,
     "typ" : typ,
@@ -64,11 +65,15 @@ def generate(subject, typ, number):
 
     if substring:
         substring = substring.group()
-        print(substring)
+        # print(substring)
     else:
         print("No response_json found.")
 
     return substring
 
+
+
+if __name__ == '__main__':
+    print("Gemini: ", generate("DBMS", "Open Question", 10))
 
 
