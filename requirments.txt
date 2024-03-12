@@ -8,3 +8,5 @@ pandas
 json
 google
 google-generativeai
+pypdf
+chromadb

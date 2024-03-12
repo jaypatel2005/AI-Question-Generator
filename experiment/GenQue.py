@@ -74,6 +74,6 @@ def generate(subject, typ, number):
 
 
 if __name__ == '__main__':
-    print("Gemini: ", generate("DBMS", "Open Question", 10))
+    print("Gemini: ", generate("AI", "Open Question", 10))
 
 
