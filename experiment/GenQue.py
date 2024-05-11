@@ -13,7 +13,7 @@ genai.configure(api_key=os.getenv("GEMINI_KEY"))
 model = genai.GenerativeModel("gemini-pro")
 
 llm = ChatGoogleGenerativeAI(model="gemini-pro",
-                             temperature=0.7,
+                             temperature=1,
                              google_api_key=os.getenv("GEMINI_KEY"))
 
 
@@ -35,7 +35,7 @@ You are an expert question generator. we are conducting an exam on \
 {subject} your job is to generate 15 question of type {typ} for that subject.  \
 Make sure the questions are not repeated and check all the questions to be conforming the text as well. \
 Make sure to format your response like  RESPONSE_JSON below  and use it as a guide. \
-Ensure to make {number} Questions \
+Ensure to make exatly {number} Questions \
 ### RESPONSE_JSON  \ 
 {response_json} \
 
